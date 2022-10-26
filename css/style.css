@@ -1,0 +1,174 @@
+/*Import*/
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif; */
+
+/*Variables*/
+
+:root {
+  --primary-color-600: hsl(184 100% 22%);
+  --primary-color-800: hsl(179 100% 13%);
+  --accent-color-400: hsl(31 77% 52%);
+
+  --neutral-color-075: hsl(0 0% 100%/ 0.75);
+  --neutral-color-100: hsl(0 0% 95%);
+}
+
+/*Universal*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  font: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--neutral-color-075);
+  padding: 20px;
+}
+
+/*Container*/
+
+.container {
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+/*Cards*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--neutral-color-100);
+  padding: 2.5rem;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+.card p {
+  color: var(--neutral-color-075);
+  font-size: 0.81rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  background-color: var(--neutral-color-100);
+  border-radius: 2rem;
+  width: 10rem;
+  height: 2.5rem;
+}
+
+.card-txt {
+  margin-top: -3rem;
+}
+
+/*Sedan*/
+
+.sedan {
+  background-color: var(--accent-color-400);
+}
+
+.sedan button {
+  color: var(--accent-color-400);
+}
+
+.sedan button:hover {
+  background-color: var(--accent-color-400);
+  color: var(--neutral-color-100);
+  border: solid 0.125rem var(--neutral-color-100);
+}
+
+/*SUVS*/
+
+.suvs {
+  background-color: var(--primary-color-600);
+}
+
+.suvs button {
+  color: var(--primary-color-600);
+}
+
+.suvs button:hover {
+  background-color: var(--primary-color-600);
+  color: var(--neutral-color-100);
+  border: solid 0.125rem var(--neutral-color-100);
+}
+
+/*Luxury*/
+
+.luxury {
+  background-color: var(--primary-color-800);
+}
+
+.luxury button {
+  color: var(--primary-color-800);
+}
+
+.luxury button:hover {
+  background-color: var(--primary-color-800);
+  color: var(--neutral-color-100);
+  border: solid 0.125rem var(--neutral-color-100);
+}
+
+/*Media Queries*/
+
+@media (min-width: 56.25rem) {
+  object {
+    height: 10vh;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .card {
+    width: 30ch;
+    height: 60vh;
+    padding: 3rem;
+    justify-content: start;
+  }
+
+  .card-txt {
+    padding-top: 2rem;
+  }
+
+  .card-txt h1 {
+    font-size: 2.5rem;
+  }
+
+  .card-txt p {
+    width: 23ch;
+    line-height: 1.9;
+    font-size: 0.92rem;
+    padding-bottom: 8rem;
+  }
+}
+
+/*Utilities*/
